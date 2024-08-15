@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f1e75943a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="musicPlayer">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </nav>
+            <img src="./imgs/traviss.jpg" class="songImg" />
+
+            <h1>FE!N</h1>
+            <p>Travis Scott Ft. Playboi Carti</p>
+
+            <audio controls id="song">
+                <source src="./media/Fein_Playboi_Carti_Travis_Scott (1).mp3" type="audio/mpeg" />
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <dic class="controllers">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </dic>
+        </div>
+    </div>
+    
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
